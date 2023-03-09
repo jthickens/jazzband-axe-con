@@ -10,7 +10,7 @@
     "start": "parcel src/index.html --port 1234",
     "cy:open": "cypress open",
     "cy:wait": "wait-on http://localhost:1234",
-    "test": "API_KEY=2429348b-33ed-4713-9f95-236be7836f32 SERVER_URL=https://axe.dequelabs.com cypress run --headed --browser=chrome"
+    "test": "cypress run --headed --browser=chrome"
   },
   "prettier": {
     "singleQuote": true

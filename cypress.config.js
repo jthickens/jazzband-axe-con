@@ -1,10 +1,4 @@
-
-const { cypressConfig } = require('@axe-core/watcher')
-
-module.exports = defineConfig(
-  cypressConfig({
-    axe: {
-      apiKey: 'abcdef-1234',
-    },
-  })
-);
+module.exports = {
+  'projectId': '4b7344',
+  e2e: {},
+}
