@@ -18,3 +18,14 @@
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+require('@axe-core/watcher/dist/cypressCommands');
+const { wrapCy } = require('@axe-core/watcher/dist/cypress');
+
+before(() => {
+  wrapCy(cy);
+});
+
+afterEach(() => {
+  cy.axeFlush();
+});
